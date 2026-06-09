@@ -108,7 +108,7 @@ export default function Portfolio() {
           <div className="space-y-12">
             <div className="space-y-6">
               <h3 className="text-xl font-semibold text-primary border-l-4 border-primary pl-4">
-                Subsection A: [Evidence Piece 4] Exploratory Data Analysis (EDA) on Global Developer Ecosystems
+                Exploratory Data Analysis (EDA) on Global Developer Ecosystems
               </h3>
               <p className="text-gray-700 leading-relaxed" data-testid="text-academic-eda">
                 Analyzed the comprehensive Stack Overflow Developer Survey 2024 dataset, parsing 65,437 individual records across 114 unique variables. Executed data cleaning, normalization, and exploratory data analysis to evaluate macroeconomic trends in employment models, compensation models, and overall career satisfaction metrics.
@@ -146,17 +146,11 @@ export default function Portfolio() {
 
             <div className="space-y-6">
               <h3 className="text-xl font-semibold text-primary border-l-4 border-primary pl-4">
-                Subsection B: [Evidence Piece 5] Full-Stack Regional Sports Platform
+                Full-Stack Regional Sports Platform
               </h3>
               <p className="text-gray-700 leading-relaxed" data-testid="text-academic-sports">
                 Designed, developed, and deployed a comprehensive, production-grade full-stack basketball platform tailored specifically for local athletic tracking and scheduling within the Toronto region. Features high-frequency relational data handling, dynamic schedule rendering, and optimized client-side state management.
               </p>
-              
-              <div className="w-full bg-gray-50 border-2 border-dashed border-gray-300 rounded-xl p-12 flex items-center justify-center text-center shadow-inner min-h-[300px]" data-testid="container-placeholder-sandbox">
-                <p className="text-gray-500 font-medium">
-                  [Placeholder of Project Code Sandbox and Database Schema Diagram]
-                </p>
-              </div>
             </div>
           </div>
         </section>
@@ -183,28 +177,28 @@ export default function Portfolio() {
               </thead>
               <tbody className="divide-y divide-gray-100 text-gray-700">
                 <tr className="hover:bg-gray-50/50 transition-colors">
-                  <td className="px-6 py-4 font-medium text-gray-900">[Evidence Piece 6] WHMIS (Workplace Hazardous Materials Information System) Certificate</td>
+                  <td className="px-6 py-4 font-medium text-gray-900">WHMIS (Workplace Hazardous Materials Information System) Certificate</td>
                   <td className="px-6 py-4"><span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Verified Complete / Active</span></td>
                 </tr>
                 <tr className="hover:bg-gray-50/50 transition-colors">
-                  <td className="px-6 py-4 font-medium text-gray-900">[Evidence Piece 7] Young Worker Awareness Health & Safety Certificate (4-Step Test Verified)</td>
+                  <td className="px-6 py-4 font-medium text-gray-900">Young Worker Awareness Health & Safety Certificate (4-Step Test Verified)</td>
                   <td className="px-6 py-4"><span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Verified Complete / Active</span></td>
                 </tr>
                 <tr className="hover:bg-gray-50/50 transition-colors">
-                  <td className="px-6 py-4 font-medium text-gray-900">[Evidence Piece 8] AODA (Accessibility for Ontarians with Disabilities Act) Compliance Training Certificate</td>
+                  <td className="px-6 py-4 font-medium text-gray-900">AODA (Accessibility for Ontarians with Disabilities Act) Compliance Training Certificate</td>
                   <td className="px-6 py-4"><span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Verified Complete / Active</span></td>
                 </tr>
                 <tr className="hover:bg-gray-50/50 transition-colors">
-                  <td className="px-6 py-4 font-medium text-gray-900">[Evidence Piece 9] Professional Lifeguarding & Aquatic Emergency Response Credentials (including Standard First Aid / CPR-C)</td>
+                  <td className="px-6 py-4 font-medium text-gray-900">Professional Lifeguarding & Aquatic Emergency Response Credentials (including Standard First Aid / CPR-C)</td>
                   <td className="px-6 py-4"><span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Verified Complete / Active</span></td>
                 </tr>
                 <tr className="hover:bg-gray-50/50 transition-colors">
-                  <td className="px-6 py-4 font-medium text-gray-900">[Evidence Piece 10] LinkedIn Learning Professional Course Certificate (Advanced Programming Track)</td>
+                  <td className="px-6 py-4 font-medium text-gray-900">LinkedIn Learning Professional Course Certificate (Advanced Programming Track)</td>
                   <td className="px-6 py-4"><span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Verified Complete / Active</span></td>
                 </tr>
                 <tr className="bg-gray-50/80">
                   <td colSpan={2} className="px-6 py-5 text-gray-800 font-medium">
-                    [Additional Milestone] Elite Athletic Milestone Certification: Official Selection & Roster Spot on the Nike EYBL 17U Circuit (Age 16), representing an NBA All-Star Starter's AAU team internationally.
+                    Elite Athletic Milestone Certification: Official Selection & Roster Spot on the Nike EYBL 17U Circuit (Age 16), representing an NBA All-Star Starter's AAU team internationally.
                   </td>
                 </tr>
               </tbody>
@@ -223,7 +217,7 @@ export default function Portfolio() {
           <div className="space-y-12">
             <div className="bg-white p-8 rounded-xl border border-gray-200 shadow-sm space-y-6">
               <h3 className="text-xl font-semibold text-primary border-l-4 border-primary pl-4">
-                Subsection A: [Evidence Piece 11] Interactive Engineering & Digital Asset Production
+                Interactive Engineering & Digital Asset Production
               </h3>
               <p className="text-gray-700 leading-relaxed whitespace-pre-wrap" data-testid="text-experience-interactive">
                 {"Operating as an independent technical creator and digital asset entrepreneur, managing production-grade user systems before entering secondary co-op roles:\n• Online Multiplayer Architecture: Built and maintained a custom 3D online multiplayer web game that scaled to support over 2,000 players, generating early business revenue streams at age 9.\n• Digital Content Creation & Media Production: Scripted, recorded, and edited a series of technical and athletic video projects for YouTube, capturing highly engaged audiences ranging from 30,000 to 45,000 views per video.\n• E-Commerce Asset Sales: Established an independent digital art pipeline, facilitating direct-to-consumer sales ranging from $80 to $120 per bespoke piece."}
@@ -232,7 +226,7 @@ export default function Portfolio() {
 
             <div className="bg-white p-8 rounded-xl border border-gray-200 shadow-sm space-y-6">
               <h3 className="text-xl font-semibold text-primary border-l-4 border-primary pl-4">
-                Subsection B: [Evidence Piece 12] Glen Park Public School Fun Fair Initiative
+                Glen Park Public School Fun Fair Initiative
               </h3>
               <div className="space-y-4">
                 <div>
