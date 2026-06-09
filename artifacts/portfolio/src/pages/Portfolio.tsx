@@ -296,21 +296,6 @@ export default function Portfolio() {
             </div>
           </div>
 
-          <div className="bg-gray-50 rounded-xl p-6 border border-gray-100 shadow-sm max-w-4xl mx-auto">
-            <div className="aspect-video w-full rounded-lg overflow-hidden shadow-md bg-black">
-              <iframe
-                src="https://www.youtube.com/embed/nHm5mfqRdw0"
-                title="Your Day in the Life Co-op Promo Video"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="w-full h-full border-0"
-                data-testid="iframe-youtube-coop"
-              ></iframe>
-            </div>
-            <p className="text-center text-sm font-medium text-gray-500 mt-4 px-4" data-testid="text-video-caption-coop">
-              Your Day in the Life Co-op Promo Video presentation demonstrating everyday development operations, technology integrations, and major technical deliverables.
-            </p>
-          </div>
         </section>
       </main>
 
