@@ -1,0 +1,66 @@
+You are an elite frontend UI/UX engineer using Google Stitch. Generate a fully responsive, professional Digital Work Portfolio website for a Grade 11 student based strictly on the provided structured content and evidence items below to maximize assessment marks.
+=========================================
+DESIGN SYSTEM & STRUCTURAL SPECIFICATIONS
+=========================================
+- Typography: Clean sans-serif layout (e.g., Inter or system-ui).
+- Layout: Structured, linear block sections with clear headers (H1, H2, H3) to maximize presentation marks.
+- Elements: Use distinct visual container blocks for project summaries and stylized tables for data representation.
+- Media Handling: Place clean text-based tables or lists for certifications—do not use image slots for certificates. Keep video frames matching the explicit labels provided.
+=========================================
+PORTFOLIO CONTENT & EVIDENCE ARTIFACTS
+=========================================
+# SECTION 1: ABOUT ME
+- Title: About Me & Professional Overview
+- Media Component 1: Profile Image Slot (Use attached image)
+- Narrative: "I am a driven full-stack software developer, certified lifeguard, and high-performance athlete based in Toronto, Ontario. Operating at the intersection of complex systems engineering, emergency aquatic response, and elite athletics, I specialize in building high-performance web applications, maintaining rigorous safety standards, and optimizing live production codebases. My technical toolkit spans modern frontend frameworks, backend database architectures, and cloud infrastructure integration. Whether managing safety on a pool deck, driving execution on the basketball court, or auditing production enterprise code, I focus on speed, precision, and continuous optimization."
+- Action Buttons / Hyperlinks: 
+  1. [Evidence Piece 1] Styled button for "Access My Updated Resume" -> https://docs.google.com/document/d/18YL1_gBjSJA2PvuXg0GDZLRD1PA76sZOTcsxolESOgY/edit?usp=sharing
+  2. [Evidence Piece 2] Styled button for "Connect on LinkedIn" -> https://www.linkedin.com/in/johncheungdev/
+- Media Component 2: [Evidence Piece 3] Professional Video. Embed a native responsive video frame linking to: https://youtu.be/nHm5mfqRdw0
+- Sub-caption: "An overview of my time at Metatalent AI"
+# SECTION 2: ACADEMIC & RESEARCH ACHIEVEMENTS
+- Title: Academic & Research Achievements
+- Subsection A: [Evidence Piece 4] Exploratory Data Analysis (EDA) on Global Developer Ecosystems
+- Text: "Analyzed the comprehensive Stack Overflow Developer Survey 2024 dataset, parsing 65,437 individual records across 114 unique variables. Executed data cleaning, normalization, and exploratory data analysis to evaluate macroeconomic trends in employment models, compensation models, and overall career satisfaction metrics."
+- Visual Component: Render an explicit data table:
+  * Columns: Metric Analyzed | Findings & Distribution Data | Strategic Recommendation
+  * Row 1: Work Models | 42.8% Hybrid, 40.6% Remote | Shift recruitment models to support distributed pipelines.
+  * Row 2: Compensation | Median: $65,000, Mean: $86,000 | Implement localized talent compensation models.
+  * Row 3: Job Satisfaction | Average: 6.9 / 10 | Optimize retention frameworks by addressing development bottlenecks.
+- Subsection B: [Evidence Piece 5] Full-Stack Regional Sports Platform
+- Text: "Designed, developed, and deployed a comprehensive, production-grade full-stack basketball platform tailored specifically for local athletic tracking and scheduling within the Toronto region. Features high-frequency relational data handling, dynamic schedule rendering, and optimized client-side state management."
+- Media Placeholder: Display text exactly: "[Placeholder of Project Code Sandbox and Database Schema Diagram]" inside a neat visual box.
+# SECTION 3: PROFESSIONAL ACHIEVEMENTS & CERTIFICATIONS (Pure Text Directory - No Images)
+- Title: Professional Credentials & Technical Certifications
+- Text: "To ensure full operational compliance in corporate settings, public facilities, and physical production environments, I maintain a comprehensive verified catalog of health, safety, emergency response, and industry-standard certifications:"
+- Component Layout: Render a clean, stylized text list or structural table mapping out the credentials below. Ensure there are NO image placeholders for these items, displaying them as a clean text directory:
+  1. [Evidence Piece 6] WHMIS (Workplace Hazardous Materials Information System) Certificate — *Status: Verified Complete / Active*
+  2. [Evidence Piece 7] Young Worker Awareness Health & Safety Certificate (4-Step Test Verified) — *Status: Verified Complete / Active*
+  3. [Evidence Piece 8] AODA (Accessibility for Ontarians with Disabilities Act) Compliance Training Certificate — *Status: Verified Complete / Active*
+  4. [Evidence Piece 9] Professional Lifeguarding & Aquatic Emergency Response Credentials (including Standard First Aid / CPR-C) — *Status: Verified Complete / Active*
+  5. [Evidence Piece 10] LinkedIn Learning Professional Course Certificate (Advanced Programming Track) — *Status: Verified Complete / Active*
+  6. [Additional Milestone] Elite Athletic Milestone Certification: Official Selection & Roster Spot on the Nike EYBL 17U Circuit (Age 16), representing an NBA All-Star Starter’s AAU team internationally.
+# SECTION 4: WORK, VOLUNTEER & COMMUNITY EXPERIENCE
+- Title: Work Experience, Volunteerism & Community Involvement
+- Subsection A: [Evidence Piece 11] Interactive Engineering & Digital Asset Production
+- Text: "Operating as an independent technical creator and digital asset entrepreneur, managing production-grade user systems before entering secondary co-op roles:
+  * Online Multiplayer Architecture: Built and maintained a custom 3D online multiplayer web game that scaled to support over 2,000 players, generating early business revenue streams at age 9.
+  * Digital Content Creation & Media Production: Scripted, recorded, and edited a series of technical and athletic video projects for YouTube, capturing highly engaged audiences ranging from 30,000 to 45,000 views per video.
+  * E-Commerce Asset Sales: Established an independent digital art pipeline, facilitating direct-to-consumer sales ranging from $80 to $120 per bespoke piece."
+- Subsection B: [Evidence Piece 12] Glen Park Public School Fun Fair Initiative
+- Summary & Community Impact Text: 
+  * Activity Summary: "Volunteered as a community event assistant at the Glen Park Public School Fun Fair. Collaborated directly with school administration and staff members to manage activity stations, coordinate logistics, and assist in event setup and teardown operations."
+  * Community Impact: "Supported a key local community fundraising event that brought together neighborhood families, helping raise vital funding for school programs and student resources while creating a safe, highly organized environment for attendees."
+# SECTION 5: CO-OP EXPERIENCE (MetaTalent.AI)
+- Title: Co-op Placement Engineering Architecture (MetaTalent.AI)
+- Text: "During an intensive technical placement (March–June 2026), operated directly within a live production environment utilizing an enterprise toolchain including Figma Make, Stitch (Google), Claude Code, and direct Gemini API integrations."
+- Code/Audit Highlight Block: Render a clean, bordered callout container showing these details explicitly:
+  * Technical Code Audit: Identified and resolved 4 critical JavaScript bugs by consolidating initialization into a scoped module/IIFE pattern and executing comprehensive null checks. Solved duplicate DOMContentLoaded listeners; fixed global variable collisions on 'slides' and 'showSlide'; stripped out a duplicate Swiper.js script instance saving ~120KB payload; and resolved a null getElementById call throwing an uncaught TypeError on page loads. Verified clean execution with zero console errors via Chrome DevTools.
+  * High-Severity Infrastructure Remediation: Flagged and created a prioritized remediation roadmap for 7 high-severity issues, including missing security headers (CSP, X-Frame-Options, Referrer-Policy, X-Content-Type-Options), sidebar null-check logic flaws, invalid HTML markup tags, newsletter routing anomalies to external Mailchimp vendors, and render-blocking scripts in the document head. Documented 7 broken 404 links. Identified and removed an exposed source code archive in the public web root via SSH with server-side status checks.
+  * Venture Café London Feature Build: Designed and shipped an optimization-focused 'Spin the Wheel' web app for MetaTalent.AI's booth at Venture Café London within a single 8-hour workday. Engineered a weighted probability engine across 6 distinct prize tiers, integrated an email capture gate with one-spin-per-email validation, wired a real-time Supabase/PostgreSQL database connection, and deployed a custom iPad-optimized user layout for real-time lead capture during the live event.
+- Media Component: Co-op Promotional Presentation Video. Embed a native video player block or placeholder linked to your video asset: https://youtu.be/nHm5mfqRdw0
+- Sub-caption: "Your Day in the Life Co-op Promo Video presentation demonstrating everyday development operations, technology integrations, and major technical deliverables."
+=========================================
+EXECUTION INSTRUCTIONS FOR STITCH
+=========================================
+Generate the semantic, structured HTML/CSS layout utilizing clean CSS variables. Ensure headers guide the evaluator logically through the portfolio layout. Output the layout structure now.
