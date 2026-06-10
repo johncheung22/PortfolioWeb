@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useRef } from "react";
 import { motion, useScroll, useSpring, useInView, animate, AnimatePresence, useMotionValue, useTransform } from "framer-motion";
-import profileImg from "@assets/1000009362_1781048086803.jpg";
-import whmisImg from "@assets/whmiscoursecompletion_1781050023857.png";
-import safety4StepImg from "@assets/Screenshot_2026-01-31_004226_(1)_1781050225286.png";
-import volunteerImg from "@assets/Untitled34_20260609200146_1781050272216.jpeg";
+import profileImg from "/images/1000009362_1781048086803.jpg";
+import whmisImg from "/images/whmiscoursecompletion_1781050023857.png";
+import safety4StepImg from "/images/Screenshot_2026-01-31_004226_(1)_1781050225286.png";
+import volunteerImg from "/images/Untitled34_20260609200146_1781050272216.jpeg";
 import { Button } from "@/components/ui/button";
 
 function useScrollToHash() {
