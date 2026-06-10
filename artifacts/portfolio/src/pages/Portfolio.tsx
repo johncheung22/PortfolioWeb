@@ -211,15 +211,7 @@ export default function Portfolio() {
                   <td className="px-6 py-4 align-top"><span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Verified Complete / Active</span></td>
                 </tr>
                 <tr className="hover:bg-gray-50/50 transition-colors">
-                  <td className="px-6 py-4 font-medium text-gray-900">AODA (Accessibility for Ontarians with Disabilities Act) Compliance Training Certificate</td>
-                  <td className="px-6 py-4"><span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Verified Complete / Active</span></td>
-                </tr>
-                <tr className="hover:bg-gray-50/50 transition-colors">
                   <td className="px-6 py-4 font-medium text-gray-900">Professional Lifeguarding & Aquatic Emergency Response Credentials (including Standard First Aid / CPR-C)</td>
-                  <td className="px-6 py-4"><span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Verified Complete / Active</span></td>
-                </tr>
-                <tr className="hover:bg-gray-50/50 transition-colors">
-                  <td className="px-6 py-4 font-medium text-gray-900">LinkedIn Learning Professional Course Certificate (Advanced Programming Track)</td>
                   <td className="px-6 py-4"><span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Verified Complete / Active</span></td>
                 </tr>
                 <tr className="bg-gray-50/80">
@@ -254,22 +246,26 @@ export default function Portfolio() {
               <h3 className="text-xl font-semibold text-primary border-l-4 border-primary pl-4">
                 Glen Park Public School Fun Fair Initiative
               </h3>
-              <div className="space-y-4">
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">Activity Summary</h4>
-                  <p className="text-gray-700 leading-relaxed" data-testid="text-experience-volunteer-summary">
-                    Volunteered as a community event assistant at the Glen Park Public School Fun Fair. Collaborated directly with school administration and staff members to manage activity stations, coordinate logistics, and assist in event setup and teardown operations.
-                  </p>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">Community Impact</h4>
-                  <p className="text-gray-700 leading-relaxed" data-testid="text-experience-volunteer-impact">
-                    Supported a key local community fundraising event that brought together neighborhood families, helping raise vital funding for school programs and student resources while creating a safe, highly organized environment for attendees.
-                  </p>
-                </div>
-                <div className="pt-2">
-                  <img src={volunteerImg} alt="Volunteering at North York Harvest Food Bank" className="w-full max-w-lg rounded-lg border border-gray-200 shadow-sm" data-testid="img-volunteer" />
-                </div>
+              <div>
+                <h4 className="font-semibold text-gray-900 mb-1">Activity Summary</h4>
+                <p className="text-gray-700 leading-relaxed" data-testid="text-experience-volunteer-summary">
+                  Volunteered as a community event assistant at the Glen Park Public School Fun Fair. Collaborated directly with school administration and staff members to manage activity stations, coordinate logistics, and assist in event setup and teardown operations.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-white p-8 rounded-xl border border-gray-200 shadow-sm space-y-6">
+              <h3 className="text-xl font-semibold text-primary border-l-4 border-primary pl-4">
+                North York Harvest Food Bank
+              </h3>
+              <div>
+                <h4 className="font-semibold text-gray-900 mb-1">Community Impact</h4>
+                <p className="text-gray-700 leading-relaxed" data-testid="text-experience-volunteer-impact">
+                  Supported a key local community fundraising event that brought together neighborhood families, helping raise vital funding for food programs and community resources while creating a safe, highly organized environment for attendees.
+                </p>
+              </div>
+              <div>
+                <img src={volunteerImg} alt="Volunteering at North York Harvest Food Bank" className="w-full max-w-lg rounded-lg border border-gray-200 shadow-sm" data-testid="img-volunteer" />
               </div>
             </div>
           </div>
