@@ -1,8 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import profileImg from "@assets/1000009362_1781048086803.jpg";
+import whmisImg from "@assets/whmiscoursecompletion_1781050023857.png";
+import safety4StepImg from "@assets/Screenshot_2026-01-31_004226_(1)_1781050225286.png";
+import volunteerImg from "@assets/Untitled34_20260609200146_1781050272216.jpeg";
 import { Button } from "@/components/ui/button";
 
+function useScrollToHash() {
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const el = document.querySelector(hash);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, []);
+}
+
 export default function Portfolio() {
+  useScrollToHash();
   const sections = [
     { id: "about", label: "About Me" },
     { id: "academic", label: "Academic & Research Achievements" },
@@ -177,12 +193,22 @@ export default function Portfolio() {
               </thead>
               <tbody className="divide-y divide-gray-100 text-gray-700">
                 <tr className="hover:bg-gray-50/50 transition-colors">
-                  <td className="px-6 py-4 font-medium text-gray-900">WHMIS (Workplace Hazardous Materials Information System) Certificate</td>
-                  <td className="px-6 py-4"><span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Verified Complete / Active</span></td>
+                  <td className="px-6 py-4 font-medium text-gray-900">
+                    <div className="space-y-3">
+                      <p>WHMIS (Workplace Hazardous Materials Information System) Certificate</p>
+                      <img src={whmisImg} alt="WHMIS Certificate" className="w-full max-w-xs rounded-lg border border-gray-200 shadow-sm" data-testid="img-whmis-certificate" />
+                    </div>
+                  </td>
+                  <td className="px-6 py-4 align-top"><span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Verified Complete / Active</span></td>
                 </tr>
                 <tr className="hover:bg-gray-50/50 transition-colors">
-                  <td className="px-6 py-4 font-medium text-gray-900">Young Worker Awareness Health & Safety Certificate (4-Step Test Verified)</td>
-                  <td className="px-6 py-4"><span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Verified Complete / Active</span></td>
+                  <td className="px-6 py-4 font-medium text-gray-900">
+                    <div className="space-y-3">
+                      <p>Young Worker Awareness Health & Safety Certificate (4-Step Test Verified)</p>
+                      <img src={safety4StepImg} alt="Young Worker Awareness Health & Safety Certificate" className="w-full max-w-xs rounded-lg border border-gray-200 shadow-sm" data-testid="img-safety4step-certificate" />
+                    </div>
+                  </td>
+                  <td className="px-6 py-4 align-top"><span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Verified Complete / Active</span></td>
                 </tr>
                 <tr className="hover:bg-gray-50/50 transition-colors">
                   <td className="px-6 py-4 font-medium text-gray-900">AODA (Accessibility for Ontarians with Disabilities Act) Compliance Training Certificate</td>
@@ -240,6 +266,9 @@ export default function Portfolio() {
                   <p className="text-gray-700 leading-relaxed" data-testid="text-experience-volunteer-impact">
                     Supported a key local community fundraising event that brought together neighborhood families, helping raise vital funding for school programs and student resources while creating a safe, highly organized environment for attendees.
                   </p>
+                </div>
+                <div className="pt-2">
+                  <img src={volunteerImg} alt="Volunteering at North York Harvest Food Bank" className="w-full max-w-lg rounded-lg border border-gray-200 shadow-sm" data-testid="img-volunteer" />
                 </div>
               </div>
             </div>
