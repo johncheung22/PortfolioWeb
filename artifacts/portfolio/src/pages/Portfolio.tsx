@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import { motion, useScroll, useSpring, useInView, animate, AnimatePresence } from "framer-motion";
+import { motion, useScroll, useSpring, useInView, animate, AnimatePresence, useMotionValue, useTransform } from "framer-motion";
 import profileImg from "@assets/1000009362_1781048086803.jpg";
 import whmisImg from "@assets/whmiscoursecompletion_1781050023857.png";
 import safety4StepImg from "@assets/Screenshot_2026-01-31_004226_(1)_1781050225286.png";
@@ -66,6 +66,44 @@ const TypewriterText = () => {
     </div>
   );
 };
+
+function TiltCard({ children, className = "", intensity = 15 }: { children: React.ReactNode; className?: string; intensity?: number }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
+  const rotateX = useTransform(y, [-0.5, 0.5], [intensity, -intensity]);
+  const rotateY = useTransform(x, [-0.5, 0.5], [-intensity, intensity]);
+  const scale = useMotionValue(1);
+
+  function handleMouseMove(e: React.MouseEvent<HTMLDivElement>) {
+    const rect = ref.current?.getBoundingClientRect();
+    if (!rect) return;
+    const px = (e.clientX - rect.left) / rect.width - 0.5;
+    const py = (e.clientY - rect.top) / rect.height - 0.5;
+    x.set(px);
+    y.set(py);
+    scale.set(1.04);
+  }
+
+  function handleMouseLeave() {
+    x.set(0);
+    y.set(0);
+    scale.set(1);
+  }
+
+  return (
+    <motion.div
+      ref={ref}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+      style={{ rotateX, rotateY, scale, transformStyle: "preserve-3d", transformPerspective: 800 }}
+      transition={{ type: "spring", stiffness: 300, damping: 30 }}
+      className={className}
+    >
+      {children}
+    </motion.div>
+  );
+}
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -207,16 +245,16 @@ export default function Portfolio() {
           variants={staggerContainer}
         >
           <div className="grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
-            <motion.div variants={fadeInUp} className="md:col-span-4 flex justify-center md:justify-start group">
-              <div className="relative rounded-2xl overflow-hidden shadow-xl group-hover:shadow-2xl transition-all duration-500 group-hover:scale-[1.03] border-4 border-white">
+            <motion.div variants={fadeInUp} className="md:col-span-4 flex justify-center md:justify-start">
+              <TiltCard intensity={12} className="relative rounded-2xl overflow-hidden shadow-xl border-4 border-white cursor-pointer">
                 <img
                   src={profileImg}
                   alt="John Cheung Professional Headshot"
                   className="w-full max-w-[320px] object-cover"
                   data-testid="img-profile"
                 />
-                <div className="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-2xl"></div>
-              </div>
+                <div className="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-2xl pointer-events-none"></div>
+              </TiltCard>
             </motion.div>
             <motion.div variants={fadeInUp} className="md:col-span-8 space-y-8">
               <h2 className="text-4xl font-bold text-gray-900 tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70">
@@ -378,7 +416,9 @@ export default function Portfolio() {
                   <td className="px-8 py-6 font-medium text-gray-900">
                     <div className="space-y-4">
                       <p className="text-base">WHMIS (Workplace Hazardous Materials Information System) Certificate</p>
-                      <img src={whmisImg} alt="WHMIS Certificate" className="w-full max-w-xs rounded-xl border border-gray-100 shadow-sm" data-testid="img-whmis-certificate" />
+                      <TiltCard intensity={10} className="w-full max-w-xs cursor-pointer">
+                        <img src={whmisImg} alt="WHMIS Certificate" className="w-full rounded-xl border border-gray-100 shadow-sm" data-testid="img-whmis-certificate" />
+                      </TiltCard>
                     </div>
                   </td>
                   <td className="px-8 py-6 align-top">
@@ -389,7 +429,9 @@ export default function Portfolio() {
                   <td className="px-8 py-6 font-medium text-gray-900">
                     <div className="space-y-4">
                       <p className="text-base">Young Worker Awareness Health & Safety Certificate (4-Step Test Verified)</p>
-                      <img src={safety4StepImg} alt="Young Worker Awareness Health & Safety Certificate" className="w-full max-w-xs rounded-xl border border-gray-100 shadow-sm" data-testid="img-safety4step-certificate" />
+                      <TiltCard intensity={10} className="w-full max-w-xs cursor-pointer">
+                        <img src={safety4StepImg} alt="Young Worker Awareness Health & Safety Certificate" className="w-full rounded-xl border border-gray-100 shadow-sm" data-testid="img-safety4step-certificate" />
+                      </TiltCard>
                     </div>
                   </td>
                   <td className="px-8 py-6 align-top">
@@ -460,7 +502,9 @@ export default function Portfolio() {
                   </p>
                 </div>
                 <div className="mt-auto">
-                  <img src={volunteerImg} alt="Volunteering at North York Harvest Food Bank" className="w-full rounded-2xl border border-gray-100 shadow-sm" data-testid="img-volunteer" />
+                  <TiltCard intensity={8} className="w-full cursor-pointer">
+                    <img src={volunteerImg} alt="Volunteering at North York Harvest Food Bank" className="w-full rounded-2xl border border-gray-100 shadow-sm" data-testid="img-volunteer" />
+                  </TiltCard>
                 </div>
               </motion.div>
             </div>
