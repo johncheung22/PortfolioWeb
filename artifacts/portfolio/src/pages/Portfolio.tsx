@@ -238,7 +238,7 @@ export default function Portfolio() {
                 Interactive Engineering & Digital Asset Production
               </h3>
               <p className="text-gray-700 leading-relaxed whitespace-pre-wrap" data-testid="text-experience-interactive">
-                {"Operating as an independent technical creator and digital asset entrepreneur, managing production-grade user systems before entering secondary co-op roles:\n• Online Multiplayer Architecture: Built and maintained a custom 3D online multiplayer web game that scaled to support over 2,000 players, generating early business revenue streams at age 9.\n• Digital Content Creation & Media Production: Scripted, recorded, and edited a series of technical and athletic video projects for YouTube, capturing highly engaged audiences ranging from 30,000 to 45,000 views per video.\n• E-Commerce Asset Sales: Established an independent digital art pipeline, facilitating direct-to-consumer sales ranging from $80 to $120 per bespoke piece."}
+                {"Operating as an independent technical creator and digital asset entrepreneur, managing production-grade user systems before entering secondary co-op roles:\n• Online Multiplayer Architecture: Built and maintained a custom 3D online multiplayer web game that scaled to support over 2,000 players, generating early business revenue streams.\n• Digital Content Creation & Media Production: Scripted, recorded, and edited a series of technical and athletic video projects for YouTube, capturing highly engaged audiences ranging from 30,000 to 45,000 views per video.\n• E-Commerce Asset Sales: Established an independent digital art pipeline, facilitating direct-to-consumer sales ranging from $80 to $120 per bespoke piece."}
               </p>
             </div>
 
@@ -261,7 +261,7 @@ export default function Portfolio() {
               <div>
                 <h4 className="font-semibold text-gray-900 mb-1">Community Impact</h4>
                 <p className="text-gray-700 leading-relaxed" data-testid="text-experience-volunteer-impact">
-                  Supported a key local community fundraising event that brought together neighborhood families, helping raise vital funding for food programs and community resources while creating a safe, highly organized environment for attendees.
+                  Supported food bank operations by sorting, organizing, and moving donated food items to ensure efficient inventory management and distribution.
                 </p>
               </div>
               <div>
