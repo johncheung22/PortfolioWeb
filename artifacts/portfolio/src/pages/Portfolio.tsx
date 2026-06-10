@@ -179,7 +179,7 @@ export default function Portfolio() {
           </h1>
           <TypewriterText />
           <p className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed text-gray-600 mt-6 font-medium">
-            Building high-performance systems at the intersection of engineering, safety, and elite athletics.
+            Building high-performance systems at the intersection of development, safety, and elite athletics.
           </p>
 
           <div className="flex flex-wrap justify-center gap-4 pt-10">
