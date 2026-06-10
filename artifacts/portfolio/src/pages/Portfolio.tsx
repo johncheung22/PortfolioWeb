@@ -322,11 +322,11 @@ export default function Portfolio() {
         {/* SECTION 5: Co-op Placement Engineering Architecture (MetaTalent.AI) */}
         <section id="coop" className="scroll-mt-24 pt-8 pb-16" data-testid="section-coop">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Co-op Placement Engineering Architecture (MetaTalent.AI)
+            Co-op Placement Software Engineer (MetaTalent.AI)
           </h2>
           
           <p className="text-gray-700 leading-relaxed mb-10" data-testid="text-coop-intro">
-            During an intensive technical placement (March–June 2026), operated directly within a live production environment utilizing an enterprise toolchain including Figma Make, Stitch (Google), Claude Code, and direct Gemini API integrations.
+            During an intensive technical placement (March–June 2026), operated directly within a live production environment utilizing an enterprise toolchain including Figma Make, Stitch (Google), and Claude Code.
           </p>
 
           <div className="bg-white border border-gray-200 rounded-xl shadow-md overflow-hidden mb-12" data-testid="container-coop-highlights">
