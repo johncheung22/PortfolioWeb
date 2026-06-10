@@ -168,6 +168,52 @@ export default function Portfolio() {
                 Designed, developed, and deployed a comprehensive, production-grade full-stack basketball platform tailored specifically for local athletic tracking and scheduling within the Toronto region. Features high-frequency relational data handling, dynamic schedule rendering, and optimized client-side state management.
               </p>
             </div>
+
+            <div className="space-y-6">
+              <h3 className="text-xl font-semibold text-primary border-l-4 border-primary pl-4">
+                SPH3U: Wave Energy Systems Research
+              </h3>
+              <p className="text-gray-700 leading-relaxed" data-testid="text-academic-sph3u">
+                Successfully completed Grade 11 University Physics (SPH3U) in Grade 10 and researched wave energy systems, presenting findings on the principles, efficiency, and potential of renewable wave power technologies.
+              </p>
+              <div className="bg-gray-50 rounded-xl p-6 border border-gray-100 shadow-sm">
+                <div className="aspect-video w-full rounded-lg overflow-hidden shadow-md bg-white">
+                  <iframe
+                    src="https://docs.google.com/presentation/d/1WPRKOPH2nKcLTFIv3qgNX9Ae00s3ssflCFBQXUmNYnU/embed?start=false&loop=false&delayms=3000"
+                    title="SPH3U Wave Energy Systems Presentation"
+                    allowFullScreen
+                    className="w-full h-full border-0"
+                    data-testid="iframe-slides-sph3u"
+                  ></iframe>
+                </div>
+                <p className="text-center text-sm font-medium text-gray-500 mt-4">
+                  SPH3U Wave Energy Systems Research Presentation
+                </p>
+              </div>
+            </div>
+
+            <div className="space-y-6">
+              <h3 className="text-xl font-semibold text-primary border-l-4 border-primary pl-4">
+                SBI3U: Genetic Engineering Study
+              </h3>
+              <p className="text-gray-700 leading-relaxed" data-testid="text-academic-sbi3u">
+                Conducted an in-depth study of genetic engineering as part of Grade 11 University Biology (SBI3U), examining techniques such as gene modification and their ethical, medical, and agricultural implications.
+              </p>
+              <div className="bg-gray-50 rounded-xl p-6 border border-gray-100 shadow-sm">
+                <div className="aspect-video w-full rounded-lg overflow-hidden shadow-md bg-white">
+                  <iframe
+                    src="https://docs.google.com/presentation/d/1xYHbdaq54rAl1m8r2dpQimYOu6h-2Wd0BovtjHWCTXA/embed?start=false&loop=false&delayms=3000"
+                    title="SBI3U Genetic Engineering Presentation"
+                    allowFullScreen
+                    className="w-full h-full border-0"
+                    data-testid="iframe-slides-sbi3u"
+                  ></iframe>
+                </div>
+                <p className="text-center text-sm font-medium text-gray-500 mt-4">
+                  SBI3U Genetic Engineering Research Presentation
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
